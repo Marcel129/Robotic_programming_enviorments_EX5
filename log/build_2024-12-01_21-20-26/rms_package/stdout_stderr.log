@@ -1,0 +1,46 @@
+running egg_info
+creating ../../build/rms_package/rms_package.egg-info
+writing ../../build/rms_package/rms_package.egg-info/PKG-INFO
+writing dependency_links to ../../build/rms_package/rms_package.egg-info/dependency_links.txt
+writing entry points to ../../build/rms_package/rms_package.egg-info/entry_points.txt
+writing requirements to ../../build/rms_package/rms_package.egg-info/requires.txt
+writing top-level names to ../../build/rms_package/rms_package.egg-info/top_level.txt
+writing manifest file '../../build/rms_package/rms_package.egg-info/SOURCES.txt'
+reading manifest file '../../build/rms_package/rms_package.egg-info/SOURCES.txt'
+writing manifest file '../../build/rms_package/rms_package.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_package/build
+creating /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_package/build/lib
+creating /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_package/build/lib/rms_package
+copying rms_package/camera_script.py -> /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_package/build/lib/rms_package
+copying rms_package/state_monitor.py -> /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_package/build/lib/rms_package
+copying rms_package/error_handler.py -> /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_package/build/lib/rms_package
+copying rms_package/__init__.py -> /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_package/build/lib/rms_package
+copying rms_package/lidar_script.py -> /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_package/build/lib/rms_package
+running install
+running install_lib
+creating /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package
+copying /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_package/build/lib/rms_package/camera_script.py -> /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package
+copying /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_package/build/lib/rms_package/state_monitor.py -> /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package
+copying /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_package/build/lib/rms_package/error_handler.py -> /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package
+copying /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_package/build/lib/rms_package/__init__.py -> /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package
+copying /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_package/build/lib/rms_package/lidar_script.py -> /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package
+byte-compiling /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package/camera_script.py to camera_script.cpython-310.pyc
+byte-compiling /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package/state_monitor.py to state_monitor.cpython-310.pyc
+byte-compiling /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package/error_handler.py to error_handler.cpython-310.pyc
+byte-compiling /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package/lidar_script.py to lidar_script.cpython-310.pyc
+running install_data
+creating /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/ament_index
+creating /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/ament_index/resource_index
+creating /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/ament_index/resource_index/packages
+copying resource/rms_package -> /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/ament_index/resource_index/packages
+copying package.xml -> /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/rms_package
+running install_egg_info
+Copying ../../build/rms_package/rms_package.egg-info to /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package-0.0.0-py3.10.egg-info
+running install_scripts
+Installing camera_handler script to /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/rms_package
+Installing lidar_handler script to /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/rms_package
+Installing state_monitor script to /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/rms_package
+writing list of installed files to '/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_package/install.log'

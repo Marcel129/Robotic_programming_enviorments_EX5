@@ -1,0 +1,3 @@
+camera_handler:
+  ros__parameters:
+    msg_sending_period_s: 2.0

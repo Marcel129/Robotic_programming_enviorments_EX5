@@ -1,0 +1,45 @@
+[0.006s] Invoking command in '/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_package': /usr/bin/cmake /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/src/rms_package -DCMAKE_INSTALL_PREFIX=/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package
+[0.078s] -- The C compiler identification is GNU 11.4.0
+[0.127s] -- The CXX compiler identification is GNU 11.4.0
+[0.134s] -- Detecting C compiler ABI info
+[0.178s] -- Detecting C compiler ABI info - done
+[0.183s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.183s] -- Detecting C compile features
+[0.183s] -- Detecting C compile features - done
+[0.185s] -- Detecting CXX compiler ABI info
+[0.234s] -- Detecting CXX compiler ABI info - done
+[0.238s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.238s] -- Detecting CXX compile features
+[0.239s] -- Detecting CXX compile features - done
+[0.241s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.336s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.392s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.423s] Error parsing '/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/src/rms_package/package.xml':
+[0.448s] Traceback (most recent call last):
+[0.448s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.448s]     main()
+[0.448s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.448s]     raise e
+[0.448s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.448s]     package = parse_package_string(
+[0.448s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[0.448s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[0.448s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/src/rms_package/package.xml':
+[0.448s] Error(s):
+[0.448s] - The generic dependency on 'std_msgs' is redundant with: exec_depend
+[0.448s] - The generic dependency on 'std_srvs' is redundant with: exec_depend
+[0.455s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.455s]   execute_process(/usr/bin/python3
+[0.455s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.455s]   /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/src/rms_package/package.xml
+[0.455s]   /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_package/ament_cmake_core/package.cmake)
+[0.455s]   returned error code 1
+[0.455s] Call Stack (most recent call first):
+[0.456s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.456s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.456s]   CMakeLists.txt:23 (ament_lint_auto_find_test_dependencies)
+[0.456s] 
+[0.456s] [0m
+[0.456s] -- Configuring incomplete, errors occurred!
+[0.456s] See also "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_package/CMakeFiles/CMakeOutput.log".
+[0.458s] Invoked command in '/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_package' returned '1': /usr/bin/cmake /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/src/rms_package -DCMAKE_INSTALL_PREFIX=/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package
