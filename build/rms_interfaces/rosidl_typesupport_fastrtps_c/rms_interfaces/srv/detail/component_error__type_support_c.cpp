@@ -65,6 +65,11 @@ static bool _ComponentError_Request__cdr_serialize(
     cdr << str->data;
   }
 
+  // Field name: data
+  {
+    cdr << (ros_message->data ? true : false);
+  }
+
   return true;
 }
 
@@ -93,6 +98,13 @@ static bool _ComponentError_Request__cdr_deserialize(
     }
   }
 
+  // Field name: data
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message->data = tmp ? true : false;
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -114,6 +126,12 @@ size_t get_serialized_size_rms_interfaces__srv__ComponentError_Request(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message->component_name.size + 1);
+  // field.name data
+  {
+    size_t item_size = sizeof(ros_message->data);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -155,6 +173,13 @@ size_t max_serialized_size_rms_interfaces__srv__ComponentError_Request(
         1;
     }
   }
+  // member: data
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -164,7 +189,7 @@ size_t max_serialized_size_rms_interfaces__srv__ComponentError_Request(
     using DataType = rms_interfaces__srv__ComponentError_Request;
     is_plain =
       (
-      offsetof(DataType, component_name) +
+      offsetof(DataType, data) +
       last_member_size
       ) == ret_val;
   }
@@ -252,6 +277,10 @@ extern "C"
 {
 #endif
 
+// already included above
+// #include "rosidl_runtime_c/string.h"  // message
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"  // message
 
 // forward declare type support functions
 
@@ -272,6 +301,20 @@ static bool _ComponentError_Response__cdr_serialize(
     cdr << (ros_message->success ? true : false);
   }
 
+  // Field name: message
+  {
+    const rosidl_runtime_c__String * str = &ros_message->message;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
+  }
+
   return true;
 }
 
@@ -289,6 +332,22 @@ static bool _ComponentError_Response__cdr_deserialize(
     uint8_t tmp;
     cdr >> tmp;
     ros_message->success = tmp ? true : false;
+  }
+
+  // Field name: message
+  {
+    std::string tmp;
+    cdr >> tmp;
+    if (!ros_message->message.data) {
+      rosidl_runtime_c__String__init(&ros_message->message);
+    }
+    bool succeeded = rosidl_runtime_c__String__assign(
+      &ros_message->message,
+      tmp.c_str());
+    if (!succeeded) {
+      fprintf(stderr, "failed to assign string into field 'message'\n");
+      return false;
+    }
   }
 
   return true;
@@ -314,6 +373,10 @@ size_t get_serialized_size_rms_interfaces__srv__ComponentError_Response(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // field.name message
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->message.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -350,6 +413,18 @@ size_t max_serialized_size_rms_interfaces__srv__ComponentError_Response(
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
+  // member: message
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -359,7 +434,7 @@ size_t max_serialized_size_rms_interfaces__srv__ComponentError_Response(
     using DataType = rms_interfaces__srv__ComponentError_Response;
     is_plain =
       (
-      offsetof(DataType, success) +
+      offsetof(DataType, message) +
       last_member_size
       ) == ret_val;
   }

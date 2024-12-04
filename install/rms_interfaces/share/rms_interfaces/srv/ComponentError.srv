@@ -1,3 +1,5 @@
 string component_name
+bool data
 ---
 bool success
+string message

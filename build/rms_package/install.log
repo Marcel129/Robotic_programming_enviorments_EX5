@@ -1,16 +1,18 @@
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package/camera_script.py
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package/state_monitor.py
-/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package/error_handler.py
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package/__init__.py
+/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package/component_error_handler.py
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package/lidar_script.py
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package/__pycache__/camera_script.cpython-310.pyc
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package/__pycache__/state_monitor.cpython-310.pyc
-/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package/__pycache__/error_handler.cpython-310.pyc
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package/__pycache__/__init__.cpython-310.pyc
+/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package/__pycache__/component_error_handler.cpython-310.pyc
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package/__pycache__/lidar_script.cpython-310.pyc
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/ament_index/resource_index/packages/rms_package
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/rms_package/package.xml
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/rms_package/launch/rms_package_launch.py
+/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/rms_package/config/sensors_list_for_eh.yaml
+/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/rms_package/config/sensors_list.yaml
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/rms_package/config/lidar_params.yaml
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/rms_package/config/camera_params.yaml
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/python3.10/site-packages/rms_package-0.0.0-py3.10.egg-info/top_level.txt
@@ -23,3 +25,4 @@
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/rms_package/camera_handler
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/rms_package/lidar_handler
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/rms_package/robot_state_monitor
+/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/lib/rms_package/sensor_error_handler

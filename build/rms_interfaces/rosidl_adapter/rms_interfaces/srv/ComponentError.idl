@@ -7,9 +7,13 @@ module rms_interfaces {
   module srv {
     struct ComponentError_Request {
       string component_name;
+
+      boolean data;
     };
     struct ComponentError_Response {
       boolean success;
+
+      string message;
     };
   };
 };

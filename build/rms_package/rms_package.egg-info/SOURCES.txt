@@ -10,11 +10,13 @@ setup.py
 ../../build/rms_package/rms_package.egg-info/zip-safe
 config/camera_params.yaml
 config/lidar_params.yaml
+config/sensors_list.yaml
+config/sensors_list_for_eh.yaml
 launch/rms_package_launch.py
 resource/rms_package
 rms_package/__init__.py
 rms_package/camera_script.py
-rms_package/error_handler.py
+rms_package/component_error_handler.py
 rms_package/lidar_script.py
 rms_package/state_monitor.py
 test/test_copyright.py

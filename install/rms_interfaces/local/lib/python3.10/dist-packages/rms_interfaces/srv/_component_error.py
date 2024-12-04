@@ -56,14 +56,17 @@ class ComponentError_Request(metaclass=Metaclass_ComponentError_Request):
 
     __slots__ = [
         '_component_name',
+        '_data',
     ]
 
     _fields_and_field_types = {
         'component_name': 'string',
+        'data': 'boolean',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -71,6 +74,7 @@ class ComponentError_Request(metaclass=Metaclass_ComponentError_Request):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.component_name = kwargs.get('component_name', str())
+        self.data = kwargs.get('data', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -103,6 +107,8 @@ class ComponentError_Request(metaclass=Metaclass_ComponentError_Request):
             return False
         if self.component_name != other.component_name:
             return False
+        if self.data != other.data:
+            return False
         return True
 
     @classmethod
@@ -122,6 +128,19 @@ class ComponentError_Request(metaclass=Metaclass_ComponentError_Request):
                 isinstance(value, str), \
                 "The 'component_name' field must be of type 'str'"
         self._component_name = value
+
+    @builtins.property
+    def data(self):
+        """Message field 'data'."""
+        return self._data
+
+    @data.setter
+    def data(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, bool), \
+                "The 'data' field must be of type 'bool'"
+        self._data = value
 
 
 # Import statements for member types
@@ -179,14 +198,17 @@ class ComponentError_Response(metaclass=Metaclass_ComponentError_Response):
 
     __slots__ = [
         '_success',
+        '_message',
     ]
 
     _fields_and_field_types = {
         'success': 'boolean',
+        'message': 'string',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -194,6 +216,7 @@ class ComponentError_Response(metaclass=Metaclass_ComponentError_Response):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.success = kwargs.get('success', bool())
+        self.message = kwargs.get('message', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -226,6 +249,8 @@ class ComponentError_Response(metaclass=Metaclass_ComponentError_Response):
             return False
         if self.success != other.success:
             return False
+        if self.message != other.message:
+            return False
         return True
 
     @classmethod
@@ -245,6 +270,19 @@ class ComponentError_Response(metaclass=Metaclass_ComponentError_Response):
                 isinstance(value, bool), \
                 "The 'success' field must be of type 'bool'"
         self._success = value
+
+    @builtins.property
+    def message(self):
+        """Message field 'message'."""
+        return self._message
+
+    @message.setter
+    def message(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'message' field must be of type 'str'"
+        self._message = value
 
 
 class Metaclass_ComponentError(type):

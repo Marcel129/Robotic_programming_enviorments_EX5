@@ -2,7 +2,9 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Bool
-from example_interfaces.srv import SetBool
+# from example_interfaces.srv import SetBool
+from rms_interfaces.srv import ComponentError
+from std_srvs.srv import Empty
 
 class Camera_handler(Node):
     def __init__(self):
@@ -20,19 +22,20 @@ class Camera_handler(Node):
 
         self.msgCounter = 0
 
-        self.srv = self.create_service(SetBool, 'camera_error_handler', self.reset_callback)
+        self.srv = self.create_service(Empty, 'camera_error_handler', self.reset_callback)
 
         self.get_logger().info("Camera has been started!")
 
     def reset_callback(self, request, response):
-        if request.data:
-            self.get_logger().info("Camera reset succesfully!")
-            response.success = True
-            response.message = 'Camera restarted successfully!'
-        else:
-            self.get_logger().info("Request arrived, but with invalid data")
-            response.success = True
-            response.message = 'Camera not restarted!'
+        # if request.data:
+        #     self.get_logger().info("Camera reset succesfully!")
+        #     response.success = True
+        #     response.message = 'Camera restarted successfully!'
+        # else:
+        #     self.get_logger().info("Request arrived, but with invalid data")
+        #     response.success = True
+        #     response.message = 'Camera not restarted!'
+        self.get_logger().info("Camera reset succesfully!")
         return response
 
     def send_status(self):

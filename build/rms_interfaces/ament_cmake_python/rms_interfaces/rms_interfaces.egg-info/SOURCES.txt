@@ -4,3 +4,5 @@ rms_interfaces.egg-info/PKG-INFO
 rms_interfaces.egg-info/SOURCES.txt
 rms_interfaces.egg-info/dependency_links.txt
 rms_interfaces.egg-info/top_level.txt
+rms_interfaces/srv/__init__.py
+rms_interfaces/srv/_component_error.py

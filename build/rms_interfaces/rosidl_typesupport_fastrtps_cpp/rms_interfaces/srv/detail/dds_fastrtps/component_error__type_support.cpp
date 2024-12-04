@@ -34,6 +34,8 @@ cdr_serialize(
 {
   // Member: component_name
   cdr << ros_message.component_name;
+  // Member: data
+  cdr << (ros_message.data ? true : false);
   return true;
 }
 
@@ -45,6 +47,13 @@ cdr_deserialize(
 {
   // Member: component_name
   cdr >> ros_message.component_name;
+
+  // Member: data
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.data = tmp ? true : false;
+  }
 
   return true;
 }
@@ -66,6 +75,12 @@ get_serialized_size(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message.component_name.size() + 1);
+  // Member: data
+  {
+    size_t item_size = sizeof(ros_message.data);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -103,6 +118,14 @@ max_serialized_size_ComponentError_Request(
     }
   }
 
+  // Member: data
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -111,7 +134,7 @@ max_serialized_size_ComponentError_Request(
     using DataType = rms_interfaces::srv::ComponentError_Request;
     is_plain =
       (
-      offsetof(DataType, component_name) +
+      offsetof(DataType, data) +
       last_member_size
       ) == ret_val;
   }
@@ -249,6 +272,8 @@ cdr_serialize(
 {
   // Member: success
   cdr << (ros_message.success ? true : false);
+  // Member: message
+  cdr << ros_message.message;
   return true;
 }
 
@@ -264,6 +289,9 @@ cdr_deserialize(
     cdr >> tmp;
     ros_message.success = tmp ? true : false;
   }
+
+  // Member: message
+  cdr >> ros_message.message;
 
   return true;
 }
@@ -287,6 +315,10 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // Member: message
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.message.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -319,6 +351,19 @@ max_serialized_size_ComponentError_Response(
     current_alignment += array_size * sizeof(uint8_t);
   }
 
+  // Member: message
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -327,7 +372,7 @@ max_serialized_size_ComponentError_Response(
     using DataType = rms_interfaces::srv::ComponentError_Response;
     is_plain =
       (
-      offsetof(DataType, success) +
+      offsetof(DataType, message) +
       last_member_size
       ) == ret_val;
   }

@@ -39,6 +39,7 @@ struct ComponentError_Request_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->component_name = "";
+      this->data = false;
     }
   }
 
@@ -49,6 +50,7 @@ struct ComponentError_Request_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->component_name = "";
+      this->data = false;
     }
   }
 
@@ -56,12 +58,21 @@ struct ComponentError_Request_
   using _component_name_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
   _component_name_type component_name;
+  using _data_type =
+    bool;
+  _data_type data;
 
   // setters for named parameter idiom
   Type & set__component_name(
     const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
     this->component_name = _arg;
+    return *this;
+  }
+  Type & set__data(
+    const bool & _arg)
+  {
+    this->data = _arg;
     return *this;
   }
 
@@ -110,6 +121,9 @@ struct ComponentError_Request_
     if (this->component_name != other.component_name) {
       return false;
     }
+    if (this->data != other.data) {
+      return false;
+    }
     return true;
   }
   bool operator!=(const ComponentError_Request_ & other) const
@@ -153,16 +167,18 @@ struct ComponentError_Response_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->success = false;
+      this->message = "";
     }
   }
 
   explicit ComponentError_Response_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : message(_alloc)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->success = false;
+      this->message = "";
     }
   }
 
@@ -170,12 +186,21 @@ struct ComponentError_Response_
   using _success_type =
     bool;
   _success_type success;
+  using _message_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _message_type message;
 
   // setters for named parameter idiom
   Type & set__success(
     const bool & _arg)
   {
     this->success = _arg;
+    return *this;
+  }
+  Type & set__message(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->message = _arg;
     return *this;
   }
 
@@ -222,6 +247,9 @@ struct ComponentError_Response_
   bool operator==(const ComponentError_Response_ & other) const
   {
     if (this->success != other.success) {
+      return false;
+    }
+    if (this->message != other.message) {
       return false;
     }
     return true;

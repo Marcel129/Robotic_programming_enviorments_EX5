@@ -25,6 +25,7 @@ rms_interfaces__srv__ComponentError_Request__init(rms_interfaces__srv__Component
     rms_interfaces__srv__ComponentError_Request__fini(msg);
     return false;
   }
+  // data
   return true;
 }
 
@@ -36,6 +37,7 @@ rms_interfaces__srv__ComponentError_Request__fini(rms_interfaces__srv__Component
   }
   // component_name
   rosidl_runtime_c__String__fini(&msg->component_name);
+  // data
 }
 
 bool
@@ -48,6 +50,10 @@ rms_interfaces__srv__ComponentError_Request__are_equal(const rms_interfaces__srv
   if (!rosidl_runtime_c__String__are_equal(
       &(lhs->component_name), &(rhs->component_name)))
   {
+    return false;
+  }
+  // data
+  if (lhs->data != rhs->data) {
     return false;
   }
   return true;
@@ -67,6 +73,8 @@ rms_interfaces__srv__ComponentError_Request__copy(
   {
     return false;
   }
+  // data
+  output->data = input->data;
   return true;
 }
 
@@ -250,6 +258,11 @@ rms_interfaces__srv__ComponentError_Request__Sequence__copy(
 }
 
 
+// Include directives for member types
+// Member `message`
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"
+
 bool
 rms_interfaces__srv__ComponentError_Response__init(rms_interfaces__srv__ComponentError_Response * msg)
 {
@@ -257,6 +270,11 @@ rms_interfaces__srv__ComponentError_Response__init(rms_interfaces__srv__Componen
     return false;
   }
   // success
+  // message
+  if (!rosidl_runtime_c__String__init(&msg->message)) {
+    rms_interfaces__srv__ComponentError_Response__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -267,6 +285,8 @@ rms_interfaces__srv__ComponentError_Response__fini(rms_interfaces__srv__Componen
     return;
   }
   // success
+  // message
+  rosidl_runtime_c__String__fini(&msg->message);
 }
 
 bool
@@ -277,6 +297,12 @@ rms_interfaces__srv__ComponentError_Response__are_equal(const rms_interfaces__sr
   }
   // success
   if (lhs->success != rhs->success) {
+    return false;
+  }
+  // message
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->message), &(rhs->message)))
+  {
     return false;
   }
   return true;
@@ -292,6 +318,12 @@ rms_interfaces__srv__ComponentError_Response__copy(
   }
   // success
   output->success = input->success;
+  // message
+  if (!rosidl_runtime_c__String__copy(
+      &(input->message), &(output->message)))
+  {
+    return false;
+  }
   return true;
 }
 

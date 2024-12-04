@@ -24,6 +24,19 @@ def generate_launch_description():
         ),
         Node(
             package='rms_package',
-            executable='robot_state_monitor'
+            executable='sensor_error_handler',
+            parameters=[os.path.join(
+                src_dir,
+                'sensors_list_for_eh.yaml'
+            )]
+        ),
+        Node(
+            package='rms_package',
+            executable='robot_state_monitor',
+            parameters=[os.path.join(
+                src_dir,
+                'sensors_list.yaml'
+            )]
         )
+        
     ])

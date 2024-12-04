@@ -2,4 +2,5 @@
 camera_handler = rms_package.camera_script:main
 lidar_handler = rms_package.lidar_script:main
 robot_state_monitor = rms_package.state_monitor:main
+sensor_error_handler = rms_package.component_error_handler:main
 

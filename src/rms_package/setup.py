@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             "lidar_handler = rms_package.lidar_script:main",
             "camera_handler = rms_package.camera_script:main",
+            "sensor_error_handler = rms_package.component_error_handler:main",
             "robot_state_monitor = rms_package.state_monitor:main"
         ],
     },

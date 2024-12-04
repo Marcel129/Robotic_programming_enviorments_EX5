@@ -37,7 +37,7 @@ void ComponentError_Request_fini_function(void * message_memory)
   typed_message->~ComponentError_Request();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember ComponentError_Request_message_member_array[1] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember ComponentError_Request_message_member_array[2] = {
   {
     "component_name",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
@@ -54,13 +54,30 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ComponentErro
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "data",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(rms_interfaces::srv::ComponentError_Request, data),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers ComponentError_Request_message_members = {
   "rms_interfaces::srv",  // message namespace
   "ComponentError_Request",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(rms_interfaces::srv::ComponentError_Request),
   ComponentError_Request_message_member_array,  // message members
   ComponentError_Request_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -156,7 +173,7 @@ void ComponentError_Response_fini_function(void * message_memory)
   typed_message->~ComponentError_Response();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember ComponentError_Response_message_member_array[1] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember ComponentError_Response_message_member_array[2] = {
   {
     "success",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
@@ -173,13 +190,30 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ComponentErro
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "message",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(rms_interfaces::srv::ComponentError_Response, message),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers ComponentError_Response_message_members = {
   "rms_interfaces::srv",  // message namespace
   "ComponentError_Response",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(rms_interfaces::srv::ComponentError_Response),
   ComponentError_Response_message_member_array,  // message members
   ComponentError_Response_init_function,  // function to initialize message memory (memory has to be allocated)

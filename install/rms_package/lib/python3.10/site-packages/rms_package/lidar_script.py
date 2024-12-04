@@ -2,7 +2,8 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Bool
-from example_interfaces.srv import SetBool
+from rms_interfaces.srv import ComponentError
+from std_srvs.srv import Empty
 
 class LIDAR_handler(Node):
     def __init__(self):
@@ -20,21 +21,21 @@ class LIDAR_handler(Node):
 
         self.msgCounter = 0
 
-        self.srv = self.create_service(SetBool, 'lidar_error_handler', self.reset_callback)
+        self.srv = self.create_service(Empty, 'lidar_error_handler', self.reset_callback)
 
         self.get_logger().info("LIDAR has been started!")
 
     def reset_callback(self, request, response):
-        if request.data:
-            self.get_logger().info("Lidar reset succesfully!")
-            response.success = True
-            response.message = 'Lidar restarted successfully!'
-            return response
-        else:
-            self.get_logger().info("Request arrived, but with invalid data")
-            response.success = True
-            response.message = 'Lidar not restarted!'
-            return response
+        # if request.data:
+        #     self.get_logger().info("Lidar reset succesfully!")
+        #     response.success = True
+        #     response.message = 'Lidar restarted successfully!'
+        # else:
+        #     self.get_logger().info("Request arrived, but with invalid data")
+        #     response.success = True
+        #     response.message = 'Lidar not restarted!'
+        self.get_logger().info("Lidar reset succesfully!")
+        return response
 
     def send_status(self):
         msg = Bool()

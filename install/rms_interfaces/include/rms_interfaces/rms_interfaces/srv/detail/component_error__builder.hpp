@@ -21,16 +21,32 @@ namespace srv
 namespace builder
 {
 
+class Init_ComponentError_Request_data
+{
+public:
+  explicit Init_ComponentError_Request_data(::rms_interfaces::srv::ComponentError_Request & msg)
+  : msg_(msg)
+  {}
+  ::rms_interfaces::srv::ComponentError_Request data(::rms_interfaces::srv::ComponentError_Request::_data_type arg)
+  {
+    msg_.data = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::rms_interfaces::srv::ComponentError_Request msg_;
+};
+
 class Init_ComponentError_Request_component_name
 {
 public:
   Init_ComponentError_Request_component_name()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::rms_interfaces::srv::ComponentError_Request component_name(::rms_interfaces::srv::ComponentError_Request::_component_name_type arg)
+  Init_ComponentError_Request_data component_name(::rms_interfaces::srv::ComponentError_Request::_component_name_type arg)
   {
     msg_.component_name = std::move(arg);
-    return std::move(msg_);
+    return Init_ComponentError_Request_data(msg_);
   }
 
 private:
@@ -63,16 +79,32 @@ namespace srv
 namespace builder
 {
 
+class Init_ComponentError_Response_message
+{
+public:
+  explicit Init_ComponentError_Response_message(::rms_interfaces::srv::ComponentError_Response & msg)
+  : msg_(msg)
+  {}
+  ::rms_interfaces::srv::ComponentError_Response message(::rms_interfaces::srv::ComponentError_Response::_message_type arg)
+  {
+    msg_.message = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::rms_interfaces::srv::ComponentError_Response msg_;
+};
+
 class Init_ComponentError_Response_success
 {
 public:
   Init_ComponentError_Response_success()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::rms_interfaces::srv::ComponentError_Response success(::rms_interfaces::srv::ComponentError_Response::_success_type arg)
+  Init_ComponentError_Response_message success(::rms_interfaces::srv::ComponentError_Response::_success_type arg)
   {
     msg_.success = std::move(arg);
-    return std::move(msg_);
+    return Init_ComponentError_Response_message(msg_);
   }
 
 private:
