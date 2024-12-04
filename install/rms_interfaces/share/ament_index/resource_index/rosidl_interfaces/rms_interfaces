@@ -1,0 +1,4 @@
+srv/ComponentError.idl
+srv/ComponentError.srv
+srv/ComponentError_Request.msg
+srv/ComponentError_Response.msg

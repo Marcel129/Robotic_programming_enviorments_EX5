@@ -29,12 +29,11 @@ class LIDAR_handler(Node):
             self.get_logger().info("Lidar reset succesfully!")
             response.success = True
             response.message = 'Lidar restarted successfully!'
-            return response
         else:
             self.get_logger().info("Request arrived, but with invalid data")
             response.success = True
             response.message = 'Lidar not restarted!'
-            return response
+        return response
 
     def send_status(self):
         msg = Bool()

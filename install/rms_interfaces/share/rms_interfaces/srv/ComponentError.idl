@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from rms_interfaces/srv/ComponentError.srv
+// generated code does not contain a copyright notice
+
+
+module rms_interfaces {
+  module srv {
+    struct ComponentError_Request {
+      string component_name;
+    };
+    struct ComponentError_Response {
+      boolean success;
+    };
+  };
+};

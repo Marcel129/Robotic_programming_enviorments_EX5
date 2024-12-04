@@ -15,22 +15,22 @@ class StateMonitor(Node):
             self.get_logger().info('lidar service not available, waiting again...')
         self.reqLidar = SetBool.Request()
 
+        self.cliCamera = self.create_client(SetBool, 'camera_error_handler')
+        while not self.cliCamera.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('camera service not available, waiting again...')
+        self.reqCamera = SetBool.Request()
+
         self.get_logger().info("State monitor has been started!")
-        
-        # super().__init__("camera_error_handler_cli")
-        # self.cliCamera = self.create_client(SetBool, 'camera_error_handler')
-        # while not self.cliCamera.wait_for_service(timeout_sec=1.0):
-        #     self.get_logger().info('camera service not available, waiting again...')
-        # self.reqCamera = SetBool.Request()
 
     def send_reset_request(self, sensorNo):
         if sensorNo == 1:
             self.reqLidar.data = True
             self.cliLidar.call_async(self.reqLidar)
             self.get_logger().info("LIDAR failed! Reset request sent.")
-        # elif sensorNo == 2:
-        #     self.reqCamera.data = True
-        #     return self.cliCamera.call_async(self.reqCamera)
+        elif sensorNo == 2:
+            self.reqCamera.data = True
+            self.cliCamera.call_async(self.reqCamera)
+            self.get_logger().info("Camera failed! Reset request sent.")
         else:
             self.get_logger().info('Unrecognized sensor')
 
@@ -38,8 +38,7 @@ class StateMonitor(Node):
         if msg.data:
             self.get_logger().info("Camera OK")
         else:
-            # self.send_reset_request(1)
-            self.get_logger().info("Camera failed! Reset request sent.")
+            self.send_reset_request(2)
 
     def lidar_callback(self, msg: Bool):
         if msg.data:

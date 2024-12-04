@@ -1,0 +1,228 @@
+[0.006s] Invoking command in '/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_interfaces': CMAKE_PREFIX_PATH=/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package:/home/marcel/studies/2_sem_mgr/RPE_lab/EX4/ros2_ws/install/signalPackage:/home/marcel/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/src/rms_interfaces -DCMAKE_INSTALL_PREFIX=/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces
+[0.070s] -- The C compiler identification is GNU 11.4.0
+[0.119s] -- The CXX compiler identification is GNU 11.4.0
+[0.126s] -- Detecting C compiler ABI info
+[0.170s] -- Detecting C compiler ABI info - done
+[0.175s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.175s] -- Detecting C compile features
+[0.175s] -- Detecting C compile features - done
+[0.177s] -- Detecting CXX compiler ABI info
+[0.227s] -- Detecting CXX compiler ABI info - done
+[0.231s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.231s] -- Detecting CXX compile features
+[0.232s] -- Detecting CXX compile features - done
+[0.234s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.328s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.389s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.392s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.398s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.430s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.599s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.702s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.833s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.846s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.848s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.863s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.863s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.863s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.863s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.875s] -- Found PythonExtra: .so  
+[0.899s] -- Configuring done
+[0.915s] -- Generating done
+[0.916s] -- Build files have been written to: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_interfaces
+[0.920s] Invoked command in '/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_interfaces' returned '0': CMAKE_PREFIX_PATH=/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package:/home/marcel/studies/2_sem_mgr/RPE_lab/EX4/ros2_ws/install/signalPackage:/home/marcel/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/src/rms_interfaces -DCMAKE_INSTALL_PREFIX=/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces
+[0.921s] Invoking command in '/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_interfaces': CMAKE_PREFIX_PATH=/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package:/home/marcel/studies/2_sem_mgr/RPE_lab/EX4/ros2_ws/install/signalPackage:/home/marcel/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_interfaces -- -j16 -l16
+[0.944s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.950s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.954s] [  6%] Built target ament_cmake_python_copy_rms_interfaces
+[1.066s] running egg_info
+[1.066s] creating rms_interfaces.egg-info
+[1.067s] writing rms_interfaces.egg-info/PKG-INFO
+[1.067s] writing dependency_links to rms_interfaces.egg-info/dependency_links.txt
+[1.067s] writing top-level names to rms_interfaces.egg-info/top_level.txt
+[1.067s] writing manifest file 'rms_interfaces.egg-info/SOURCES.txt'
+[1.068s] reading manifest file 'rms_interfaces.egg-info/SOURCES.txt'
+[1.068s] writing manifest file 'rms_interfaces.egg-info/SOURCES.txt'
+[1.079s] [  6%] Built target rms_interfaces__cpp
+[1.080s] [  6%] Built target ament_cmake_python_build_rms_interfaces_egg
+[1.084s] [  9%] [32mBuilding C object CMakeFiles/rms_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rms_interfaces/srv/detail/component_error__functions.c.o[0m
+[1.084s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.085s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.085s] [ 19%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.124s] [ 22%] [32m[1mLinking C shared library librms_interfaces__rosidl_generator_c.so[0m
+[1.145s] [ 22%] Built target rms_interfaces__rosidl_generator_c
+[1.150s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.150s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.150s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.199s] [ 35%] [32mBuilding CXX object CMakeFiles/rms_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rms_interfaces/srv/component_error__type_support.cpp.o[0m
+[1.212s] [ 38%] [32mBuilding CXX object CMakeFiles/rms_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rms_interfaces/srv/detail/component_error__type_support.cpp.o[0m
+[1.218s] [ 41%] [32mBuilding CXX object CMakeFiles/rms_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rms_interfaces/srv/detail/dds_fastrtps/component_error__type_support.cpp.o[0m
+[1.266s] [ 45%] [32mBuilding CXX object CMakeFiles/rms_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rms_interfaces/srv/component_error__type_support.cpp.o[0m
+[1.280s] [ 48%] [32mBuilding C object CMakeFiles/rms_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rms_interfaces/srv/detail/component_error__type_support.c.o[0m
+[1.282s] [ 51%] [32mBuilding CXX object CMakeFiles/rms_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rms_interfaces/srv/detail/component_error__type_support_c.cpp.o[0m
+[1.285s] [ 54%] [32m[1mLinking CXX shared library librms_interfaces__rosidl_typesupport_c.so[0m
+[1.301s] [ 58%] [32m[1mLinking C shared library librms_interfaces__rosidl_typesupport_introspection_c.so[0m
+[1.307s] [ 58%] Built target rms_interfaces__rosidl_typesupport_c
+[1.318s] [ 58%] Built target rms_interfaces__rosidl_typesupport_introspection_c
+[1.346s] [ 61%] [32m[1mLinking CXX shared library librms_interfaces__rosidl_typesupport_cpp.so[0m
+[1.370s] [ 61%] Built target rms_interfaces__rosidl_typesupport_cpp
+[1.407s] [ 64%] [32m[1mLinking CXX shared library librms_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[1.421s] [ 67%] [32m[1mLinking CXX shared library librms_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.441s] [ 67%] Built target rms_interfaces__rosidl_typesupport_introspection_cpp
+[1.454s] [ 70%] [32m[1mLinking CXX shared library librms_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[1.461s] [ 70%] Built target rms_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.494s] [ 70%] Built target rms_interfaces__rosidl_typesupport_fastrtps_c
+[1.505s] [ 70%] Built target rms_interfaces
+[1.516s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[1.689s] [ 74%] Built target rms_interfaces__py
+[1.700s] [ 77%] [32mBuilding C object CMakeFiles/rms_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rms_interfaces/srv/_component_error_s.c.o[0m
+[1.768s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/rms_interfaces/librms_interfaces__rosidl_generator_py.so[0m
+[1.791s] [ 80%] Built target rms_interfaces__rosidl_generator_py
+[1.803s] [ 83%] [32mBuilding C object CMakeFiles/rms_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[1.803s] [ 87%] [32mBuilding C object CMakeFiles/rms_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[1.803s] [ 90%] [32mBuilding C object CMakeFiles/rms_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[1.853s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/rms_interfaces/rms_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.854s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/rms_interfaces/rms_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.856s] [100%] [32m[1mLinking C shared library rosidl_generator_py/rms_interfaces/rms_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.872s] [100%] Built target rms_interfaces__rosidl_typesupport_c__pyext
+[1.873s] [100%] Built target rms_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.876s] [100%] Built target rms_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.883s] Invoked command in '/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_interfaces' returned '0': CMAKE_PREFIX_PATH=/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package:/home/marcel/studies/2_sem_mgr/RPE_lab/EX4/ros2_ws/install/signalPackage:/home/marcel/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_interfaces -- -j16 -l16
+[1.924s] Invoking command in '/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_interfaces': CMAKE_PREFIX_PATH=/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package:/home/marcel/studies/2_sem_mgr/RPE_lab/EX4/ros2_ws/install/signalPackage:/home/marcel/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_interfaces
+[1.929s] -- Install configuration: ""
+[1.929s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/ament_index/resource_index/rosidl_interfaces/rms_interfaces
+[1.929s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces
+[1.929s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/msg
+[1.929s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/msg/rosidl_generator_c__visibility_control.h
+[1.930s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv
+[1.930s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail
+[1.930s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail/component_error__functions.h
+[1.930s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail/component_error__type_support.h
+[1.930s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail/component_error__functions.c
+[1.930s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail/component_error__struct.h
+[1.930s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/component_error.h
+[1.930s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/environment/library_path.sh
+[1.930s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/environment/library_path.dsv
+[1.930s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/lib/librms_interfaces__rosidl_generator_c.so
+[1.931s] -- Set runtime path of "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/lib/librms_interfaces__rosidl_generator_c.so" to ""
+[1.931s] -- Up-to-date: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces
+[1.931s] -- Up-to-date: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/msg
+[1.931s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.931s] -- Up-to-date: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv
+[1.931s] -- Up-to-date: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail
+[1.931s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail/component_error__rosidl_typesupport_fastrtps_c.h
+[1.931s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/lib/librms_interfaces__rosidl_typesupport_fastrtps_c.so
+[1.931s] -- Set runtime path of "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/lib/librms_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[1.931s] -- Up-to-date: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces
+[1.931s] -- Up-to-date: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/msg
+[1.931s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.931s] -- Up-to-date: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv
+[1.931s] -- Up-to-date: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail
+[1.931s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail/component_error__rosidl_typesupport_introspection_c.h
+[1.931s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail/component_error__type_support.c
+[1.932s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/lib/librms_interfaces__rosidl_typesupport_introspection_c.so
+[1.932s] -- Set runtime path of "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/lib/librms_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[1.932s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/lib/librms_interfaces__rosidl_typesupport_c.so
+[1.932s] -- Set runtime path of "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/lib/librms_interfaces__rosidl_typesupport_c.so" to ""
+[1.932s] -- Up-to-date: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces
+[1.932s] -- Up-to-date: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv
+[1.932s] -- Up-to-date: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail
+[1.932s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail/component_error__builder.hpp
+[1.932s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail/component_error__struct.hpp
+[1.932s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail/component_error__traits.hpp
+[1.932s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/component_error.hpp
+[1.932s] -- Up-to-date: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces
+[1.932s] -- Up-to-date: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/msg
+[1.932s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.932s] -- Up-to-date: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv
+[1.932s] -- Up-to-date: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail
+[1.933s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail/component_error__rosidl_typesupport_fastrtps_cpp.hpp
+[1.933s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail/dds_fastrtps
+[1.933s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/lib/librms_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[1.933s] -- Set runtime path of "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/lib/librms_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[1.933s] -- Up-to-date: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces
+[1.933s] -- Up-to-date: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv
+[1.933s] -- Up-to-date: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail
+[1.933s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail/component_error__type_support.cpp
+[1.933s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/include/rms_interfaces/rms_interfaces/srv/detail/component_error__rosidl_typesupport_introspection_cpp.hpp
+[1.933s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/lib/librms_interfaces__rosidl_typesupport_introspection_cpp.so
+[1.933s] -- Set runtime path of "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/lib/librms_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[1.933s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/lib/librms_interfaces__rosidl_typesupport_cpp.so
+[1.934s] -- Set runtime path of "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/lib/librms_interfaces__rosidl_typesupport_cpp.so" to ""
+[1.934s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/environment/pythonpath.sh
+[1.934s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/environment/pythonpath.dsv
+[1.934s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces-0.0.0-py3.10.egg-info
+[1.934s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[1.934s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[1.934s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.934s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.934s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces
+[1.934s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[1.934s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/rms_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.935s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_c.c
+[1.935s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/librms_interfaces__rosidl_generator_py.so
+[1.935s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/rms_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.935s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.935s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/srv
+[1.935s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/srv/__init__.py
+[1.935s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/srv/_component_error_s.c
+[1.935s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/srv/_component_error.py
+[1.935s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/rms_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.935s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/__init__.py
+[1.954s] Listing '/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces'...
+[1.954s] Compiling '/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/__init__.py'...
+[1.954s] Listing '/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/srv'...
+[1.954s] Compiling '/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/srv/__init__.py'...
+[1.955s] Compiling '/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/srv/_component_error.py'...
+[1.957s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/rms_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.957s] -- Set runtime path of "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/rms_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.957s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/rms_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.957s] -- Set runtime path of "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/rms_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.958s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/rms_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.958s] -- Set runtime path of "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/local/lib/python3.10/dist-packages/rms_interfaces/rms_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[1.958s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/lib/librms_interfaces__rosidl_generator_py.so
+[1.958s] -- Set runtime path of "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/lib/librms_interfaces__rosidl_generator_py.so" to ""
+[1.958s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/srv/ComponentError.idl
+[1.958s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/srv/ComponentError.srv
+[1.958s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/srv/ComponentError_Request.msg
+[1.959s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/srv/ComponentError_Response.msg
+[1.959s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/ament_index/resource_index/package_run_dependencies/rms_interfaces
+[1.959s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/ament_index/resource_index/parent_prefix_path/rms_interfaces
+[1.959s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/environment/ament_prefix_path.sh
+[1.959s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/environment/ament_prefix_path.dsv
+[1.959s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/environment/path.sh
+[1.959s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/environment/path.dsv
+[1.959s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/local_setup.bash
+[1.959s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/local_setup.sh
+[1.960s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/local_setup.zsh
+[1.960s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/local_setup.dsv
+[1.960s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/package.dsv
+[1.960s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/ament_index/resource_index/packages/rms_interfaces
+[1.960s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/export_rms_interfaces__rosidl_generator_cExport.cmake
+[1.960s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/export_rms_interfaces__rosidl_generator_cExport-noconfig.cmake
+[1.960s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/export_rms_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[1.960s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/export_rms_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.960s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/rms_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[1.960s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/rms_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.961s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/rms_interfaces__rosidl_typesupport_cExport.cmake
+[1.961s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/rms_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[1.961s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/export_rms_interfaces__rosidl_generator_cppExport.cmake
+[1.961s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/export_rms_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.961s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/export_rms_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.961s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/rms_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[1.961s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/rms_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.961s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/rms_interfaces__rosidl_typesupport_cppExport.cmake
+[1.961s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/rms_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[1.961s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/export_rms_interfaces__rosidl_generator_pyExport.cmake
+[1.962s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/export_rms_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[1.962s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/rosidl_cmake-extras.cmake
+[1.962s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.962s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[1.962s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[1.962s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.962s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.962s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.962s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/rms_interfacesConfig.cmake
+[1.962s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/cmake/rms_interfacesConfig-version.cmake
+[1.962s] -- Installing: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_interfaces/share/rms_interfaces/package.xml
+[1.964s] Invoked command in '/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_interfaces' returned '0': CMAKE_PREFIX_PATH=/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package:/home/marcel/studies/2_sem_mgr/RPE_lab/EX4/ros2_ws/install/signalPackage:/home/marcel/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_interfaces
