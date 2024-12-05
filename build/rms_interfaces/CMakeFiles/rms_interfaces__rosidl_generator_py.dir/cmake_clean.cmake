@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/rms_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rms_interfaces/msg/_sensor_state_s.c.o"
+  "CMakeFiles/rms_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rms_interfaces/msg/_sensor_state_s.c.o.d"
   "CMakeFiles/rms_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rms_interfaces/srv/_component_error_s.c.o"
   "CMakeFiles/rms_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rms_interfaces/srv/_component_error_s.c.o.d"
   "rosidl_generator_py/rms_interfaces/librms_interfaces__rosidl_generator_py.pdb"

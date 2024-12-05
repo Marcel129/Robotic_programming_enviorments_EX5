@@ -1,4 +1,0 @@
-component_error_handler:
-  ros__parameters:
-    sensors_list: ["camera", "lidar"]
-    sensor_response_timeouts: [2.0, 20.0]

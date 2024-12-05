@@ -69,6 +69,7 @@ include CMakeFiles/rms_interfaces.dir/progress.make
 CMakeFiles/rms_interfaces: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/src/rms_interfaces/srv/ComponentError.srv
 CMakeFiles/rms_interfaces: rosidl_cmake/srv/ComponentError_Request.msg
 CMakeFiles/rms_interfaces: rosidl_cmake/srv/ComponentError_Response.msg
+CMakeFiles/rms_interfaces: /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/src/rms_interfaces/msg/SensorState.msg
 
 rms_interfaces: CMakeFiles/rms_interfaces
 rms_interfaces: CMakeFiles/rms_interfaces.dir/build.make

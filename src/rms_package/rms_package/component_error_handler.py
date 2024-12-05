@@ -21,8 +21,6 @@ class Error_handler(Node):
         self.sensorsList = self.get_parameter('sensors_list').get_parameter_value().string_array_value
         self.sensorResponseTimeouts = self.get_parameter('sensor_response_timeouts').get_parameter_value().double_array_value
 
-        # self.get_logger().info(f"lista sensorow w error handlerze: {self.sensorsList}")
-
         self.get_logger().info("Component error handler has been started!")
         self.srv = self.create_service(ComponentError, 'sensor_error_handler', self.reset_callback)
 

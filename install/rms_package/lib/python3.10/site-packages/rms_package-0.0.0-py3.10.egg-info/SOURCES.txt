@@ -11,7 +11,6 @@ setup.py
 config/camera_params.yaml
 config/lidar_params.yaml
 config/sensors_list.yaml
-config/sensors_list_for_eh.yaml
 launch/rms_package_launch.py
 resource/rms_package
 rms_package/__init__.py

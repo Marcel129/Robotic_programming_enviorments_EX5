@@ -11,10 +11,12 @@ class LIDAR_handler(Node):
         self.declare_parameters(
             namespace='',
             parameters=[
-                ('msg_sending_period_s', rclpy.Parameter.Type.DOUBLE )
+                ('msg_sending_period_s', rclpy.Parameter.Type.DOUBLE ),
+                ('number_of_msg_before_fail', rclpy.Parameter.Type.INTEGER )
             ]
         )
         self.timeInterval = self.get_parameter('msg_sending_period_s').get_parameter_value().double_value
+        self.maxMsgNo = self.get_parameter('number_of_msg_before_fail').get_parameter_value().integer_value
 
         self.lidarStatePublisher = self.create_publisher(Bool, "/lidar_state", 10)
         self.timer = self.create_timer(self.timeInterval, self.send_status)
@@ -26,27 +28,15 @@ class LIDAR_handler(Node):
         self.get_logger().info("LIDAR has been started!")
 
     def reset_callback(self, request, response):
-        # if request.data:
-        #     self.get_logger().info("Lidar reset succesfully!")
-        #     response.success = True
-        #     response.message = 'Lidar restarted successfully!'
-        # else:
-        #     self.get_logger().info("Request arrived, but with invalid data")
-        #     response.success = True
-        #     response.message = 'Lidar not restarted!'
+        self.msgCounter = 0
         self.get_logger().info("Lidar reset succesfully!")
         return response
 
     def send_status(self):
         msg = Bool()
 
-        if self.msgCounter >= 3:
-            msg.data = False
-            self.msgCounter = 0
-            self.get_logger().info("LIDAR is going to fail!")
-        else:
-            msg.data = True
-            self.msgCounter += 1
+        msg.data = self.msgCounter <= self.maxMsgNo
+        self.msgCounter += 1
 
         self.lidarStatePublisher.publish(msg)
         

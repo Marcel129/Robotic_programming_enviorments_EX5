@@ -1,6 +1,7 @@
 {
   "package_name": "rms_interfaces",
   "non_idl_tuples": [
-    "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/src/rms_interfaces:srv/ComponentError.srv"
+    "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/src/rms_interfaces:srv/ComponentError.srv",
+    "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/src/rms_interfaces:msg/SensorState.msg"
   ]
 }

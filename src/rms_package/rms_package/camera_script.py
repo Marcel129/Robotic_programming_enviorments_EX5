@@ -2,52 +2,46 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Bool
-# from example_interfaces.srv import SetBool
-from rms_interfaces.srv import ComponentError
+from rms_interfaces.msg import SensorState
 from std_srvs.srv import Empty
 
 class Camera_handler(Node):
     def __init__(self):
-        super().__init__("camera_handler")
+
+        self.name = 'camera'
+
+        super().__init__(f"{self.name}_handler")
         self.declare_parameters(
             namespace='',
             parameters=[
-                ('msg_sending_period_s', rclpy.Parameter.Type.DOUBLE )
+                ('msg_sending_period_s', rclpy.Parameter.Type.DOUBLE ),
+                ('number_of_msg_before_fail', rclpy.Parameter.Type.INTEGER )
             ]
         )
-        self.timeInterval = self.get_parameter('msg_sending_period_s').get_parameter_value().double_value
 
-        self.cameraStatePublisher = self.create_publisher(Bool, "/camera_state", 10)
+        self.timeInterval = self.get_parameter('msg_sending_period_s').get_parameter_value().double_value
+        self.maxMsgNo = self.get_parameter('number_of_msg_before_fail').get_parameter_value().integer_value
+
+        self.cameraStatePublisher = self.create_publisher(SensorState, f"/{self.name}_state", 10)
         self.timer = self.create_timer(self.timeInterval, self.send_status)
 
         self.msgCounter = 0
 
-        self.srv = self.create_service(Empty, 'camera_error_handler', self.reset_callback)
+        self.srv = self.create_service(Empty, f'{self.name}_error_handler', self.reset_callback)
 
-        self.get_logger().info("Camera has been started!")
+        self.get_logger().info(f"{self.name} has been started!")
 
     def reset_callback(self, request, response):
-        # if request.data:
-        #     self.get_logger().info("Camera reset succesfully!")
-        #     response.success = True
-        #     response.message = 'Camera restarted successfully!'
-        # else:
-        #     self.get_logger().info("Request arrived, but with invalid data")
-        #     response.success = True
-        #     response.message = 'Camera not restarted!'
-        self.get_logger().info("Camera reset succesfully!")
+        self.msgCounter = 0
+        self.get_logger().info(f"{self.name} reset succesfully!")
         return response
 
     def send_status(self):
-        msg = Bool()
+        msg = SensorState()
+        msg.sensor_name = self.name
 
-        if self.msgCounter >= 3:
-            msg.data = False
-            self.msgCounter = 0
-            self.get_logger().info("Camera is going to fail!")
-        else:
-            msg.data = True
-            self.msgCounter += 1
+        msg.data = self.msgCounter <= self.maxMsgNo
+        self.msgCounter += 1
 
         self.cameraStatePublisher.publish(msg)
         

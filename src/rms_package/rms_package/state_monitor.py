@@ -2,6 +2,7 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Bool
+from rms_interfaces.msg import SensorState
 from rms_interfaces.srv import ComponentError
 
 class StateMonitor(Node):
@@ -20,8 +21,15 @@ class StateMonitor(Node):
         self.sensorsList = self.get_parameter('sensors_list').get_parameter_value().string_array_value
         self.sensorResponseTimeouts = self.get_parameter('sensor_response_timeouts').get_parameter_value().double_array_value
 
-        self.cameraSubscriber = self.create_subscription(Bool, "/camera_state", self.camera_callback, 10)
-        self.lidarSubscriber = self.create_subscription(Bool, "/lidar_state", self.lidar_callback, 10)
+        self.sensorsSubscribers = []
+
+        for sensor in self.sensorsList:
+            sub = self.create_subscription(SensorState, f'/{sensor}_state')
+            self.sensorsSubscribers.append([sensor, sub])
+            self.get_logger().info(f"{sensor} initialized successfully!")
+
+        self.cameraSubscriber = self.create_subscription(SensorState, "/camera_state", self.camera_callback, 10)
+        self.lidarSubscriber = self.create_subscription(SensorState, "/lidar_state", self.lidar_callback, 10)
 
         self.cliErrorHandler = self.create_client(ComponentError, 'sensor_error_handler')
         while not self.cliErrorHandler.wait_for_service(timeout_sec=1.0):

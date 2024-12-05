@@ -70,6 +70,10 @@ CMakeFiles/rms_interfaces__cpp: rosidl_generator_cpp/rms_interfaces/srv/componen
 CMakeFiles/rms_interfaces__cpp: rosidl_generator_cpp/rms_interfaces/srv/detail/component_error__builder.hpp
 CMakeFiles/rms_interfaces__cpp: rosidl_generator_cpp/rms_interfaces/srv/detail/component_error__struct.hpp
 CMakeFiles/rms_interfaces__cpp: rosidl_generator_cpp/rms_interfaces/srv/detail/component_error__traits.hpp
+CMakeFiles/rms_interfaces__cpp: rosidl_generator_cpp/rms_interfaces/msg/sensor_state.hpp
+CMakeFiles/rms_interfaces__cpp: rosidl_generator_cpp/rms_interfaces/msg/detail/sensor_state__builder.hpp
+CMakeFiles/rms_interfaces__cpp: rosidl_generator_cpp/rms_interfaces/msg/detail/sensor_state__struct.hpp
+CMakeFiles/rms_interfaces__cpp: rosidl_generator_cpp/rms_interfaces/msg/detail/sensor_state__traits.hpp
 
 rosidl_generator_cpp/rms_interfaces/srv/component_error.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/rms_interfaces/srv/component_error.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -87,6 +91,7 @@ rosidl_generator_cpp/rms_interfaces/srv/component_error.hpp: /opt/ros/humble/sha
 rosidl_generator_cpp/rms_interfaces/srv/component_error.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/rms_interfaces/srv/component_error.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/rms_interfaces/srv/component_error.hpp: rosidl_adapter/rms_interfaces/srv/ComponentError.idl
+rosidl_generator_cpp/rms_interfaces/srv/component_error.hpp: rosidl_adapter/rms_interfaces/msg/SensorState.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_interfaces/rosidl_generator_cpp__arguments.json
 
@@ -99,7 +104,23 @@ rosidl_generator_cpp/rms_interfaces/srv/detail/component_error__struct.hpp: rosi
 rosidl_generator_cpp/rms_interfaces/srv/detail/component_error__traits.hpp: rosidl_generator_cpp/rms_interfaces/srv/component_error.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rms_interfaces/srv/detail/component_error__traits.hpp
 
+rosidl_generator_cpp/rms_interfaces/msg/sensor_state.hpp: rosidl_generator_cpp/rms_interfaces/srv/component_error.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rms_interfaces/msg/sensor_state.hpp
+
+rosidl_generator_cpp/rms_interfaces/msg/detail/sensor_state__builder.hpp: rosidl_generator_cpp/rms_interfaces/srv/component_error.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rms_interfaces/msg/detail/sensor_state__builder.hpp
+
+rosidl_generator_cpp/rms_interfaces/msg/detail/sensor_state__struct.hpp: rosidl_generator_cpp/rms_interfaces/srv/component_error.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rms_interfaces/msg/detail/sensor_state__struct.hpp
+
+rosidl_generator_cpp/rms_interfaces/msg/detail/sensor_state__traits.hpp: rosidl_generator_cpp/rms_interfaces/srv/component_error.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/rms_interfaces/msg/detail/sensor_state__traits.hpp
+
 rms_interfaces__cpp: CMakeFiles/rms_interfaces__cpp
+rms_interfaces__cpp: rosidl_generator_cpp/rms_interfaces/msg/detail/sensor_state__builder.hpp
+rms_interfaces__cpp: rosidl_generator_cpp/rms_interfaces/msg/detail/sensor_state__struct.hpp
+rms_interfaces__cpp: rosidl_generator_cpp/rms_interfaces/msg/detail/sensor_state__traits.hpp
+rms_interfaces__cpp: rosidl_generator_cpp/rms_interfaces/msg/sensor_state.hpp
 rms_interfaces__cpp: rosidl_generator_cpp/rms_interfaces/srv/component_error.hpp
 rms_interfaces__cpp: rosidl_generator_cpp/rms_interfaces/srv/detail/component_error__builder.hpp
 rms_interfaces__cpp: rosidl_generator_cpp/rms_interfaces/srv/detail/component_error__struct.hpp

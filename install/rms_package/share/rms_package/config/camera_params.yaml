@@ -1,3 +1,4 @@
 camera_handler:
   ros__parameters:
-    msg_sending_period_s: 20.0
+    msg_sending_period_s: 2.0
+    number_of_msg_before_fail: 5

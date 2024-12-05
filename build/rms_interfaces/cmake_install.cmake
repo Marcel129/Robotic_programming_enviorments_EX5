@@ -360,6 +360,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rms_interfaces/msg" TYPE FILE FILES "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_interfaces/rosidl_adapter/rms_interfaces/msg/SensorState.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rms_interfaces/srv" TYPE FILE FILES "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/src/rms_interfaces/srv/ComponentError.srv")
 endif()
 
@@ -369,6 +373,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rms_interfaces/srv" TYPE FILE FILES "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_interfaces/rosidl_cmake/srv/ComponentError_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rms_interfaces/msg" TYPE FILE FILES "/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/src/rms_interfaces/msg/SensorState.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

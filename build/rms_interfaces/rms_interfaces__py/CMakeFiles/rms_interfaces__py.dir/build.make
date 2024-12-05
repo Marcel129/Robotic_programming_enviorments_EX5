@@ -70,8 +70,11 @@ rms_interfaces__py/CMakeFiles/rms_interfaces__py: rosidl_generator_py/rms_interf
 rms_interfaces__py/CMakeFiles/rms_interfaces__py: rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 rms_interfaces__py/CMakeFiles/rms_interfaces__py: rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_c.c
 rms_interfaces__py/CMakeFiles/rms_interfaces__py: rosidl_generator_py/rms_interfaces/srv/_component_error.py
+rms_interfaces__py/CMakeFiles/rms_interfaces__py: rosidl_generator_py/rms_interfaces/msg/_sensor_state.py
 rms_interfaces__py/CMakeFiles/rms_interfaces__py: rosidl_generator_py/rms_interfaces/srv/__init__.py
+rms_interfaces__py/CMakeFiles/rms_interfaces__py: rosidl_generator_py/rms_interfaces/msg/__init__.py
 rms_interfaces__py/CMakeFiles/rms_interfaces__py: rosidl_generator_py/rms_interfaces/srv/_component_error_s.c
+rms_interfaces__py/CMakeFiles/rms_interfaces__py: rosidl_generator_py/rms_interfaces/msg/_sensor_state_s.c
 
 rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -87,6 +90,7 @@ rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_fastr
 rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/rms_interfaces/srv/ComponentError.idl
+rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/rms_interfaces/msg/SensorState.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_interfaces/rms_interfaces__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/build/rms_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -99,16 +103,28 @@ rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_c.c: 
 rosidl_generator_py/rms_interfaces/srv/_component_error.py: rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rms_interfaces/srv/_component_error.py
 
+rosidl_generator_py/rms_interfaces/msg/_sensor_state.py: rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rms_interfaces/msg/_sensor_state.py
+
 rosidl_generator_py/rms_interfaces/srv/__init__.py: rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rms_interfaces/srv/__init__.py
 
+rosidl_generator_py/rms_interfaces/msg/__init__.py: rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rms_interfaces/msg/__init__.py
+
 rosidl_generator_py/rms_interfaces/srv/_component_error_s.c: rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rms_interfaces/srv/_component_error_s.c
+
+rosidl_generator_py/rms_interfaces/msg/_sensor_state_s.c: rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/rms_interfaces/msg/_sensor_state_s.c
 
 rms_interfaces__py: rms_interfaces__py/CMakeFiles/rms_interfaces__py
 rms_interfaces__py: rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_c.c
 rms_interfaces__py: rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 rms_interfaces__py: rosidl_generator_py/rms_interfaces/_rms_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+rms_interfaces__py: rosidl_generator_py/rms_interfaces/msg/__init__.py
+rms_interfaces__py: rosidl_generator_py/rms_interfaces/msg/_sensor_state.py
+rms_interfaces__py: rosidl_generator_py/rms_interfaces/msg/_sensor_state_s.c
 rms_interfaces__py: rosidl_generator_py/rms_interfaces/srv/__init__.py
 rms_interfaces__py: rosidl_generator_py/rms_interfaces/srv/_component_error.py
 rms_interfaces__py: rosidl_generator_py/rms_interfaces/srv/_component_error_s.c

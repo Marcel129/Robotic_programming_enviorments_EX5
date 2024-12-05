@@ -27,7 +27,7 @@ def generate_launch_description():
             executable='sensor_error_handler',
             parameters=[os.path.join(
                 src_dir,
-                'sensors_list_for_eh.yaml'
+                'sensors_list.yaml'
             )]
         ),
         Node(

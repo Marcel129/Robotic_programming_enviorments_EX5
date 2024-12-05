@@ -11,7 +11,6 @@
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/ament_index/resource_index/packages/rms_package
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/rms_package/package.xml
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/rms_package/launch/rms_package_launch.py
-/home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/rms_package/config/sensors_list_for_eh.yaml
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/rms_package/config/sensors_list.yaml
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/rms_package/config/lidar_params.yaml
 /home/marcel/studies/2_sem_mgr/RPE_lab/EX5/ros2_ws/install/rms_package/share/rms_package/config/camera_params.yaml
