@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Bool
 from rms_interfaces.srv import ComponentError
 from std_srvs.srv import Empty
-import copy
 
 class Error_handler(Node):
     def __init__(self):
@@ -21,8 +19,6 @@ class Error_handler(Node):
         self.sensorsList = self.get_parameter('sensors_list').get_parameter_value().string_array_value
         self.sensorResponseTimeouts = self.get_parameter('sensor_response_timeouts').get_parameter_value().double_array_value
 
-        # self.get_logger().info(f"lista sensorow w error handlerze: {self.sensorsList}")
-
         self.get_logger().info("Component error handler has been started!")
         self.srv = self.create_service(ComponentError, 'sensor_error_handler', self.reset_callback)
 
@@ -37,7 +33,7 @@ class Error_handler(Node):
             
 
     def reset_callback(self, request, response):
-        self.get_logger().info(f"Request from {request.component_name} received!")
+        self.get_logger().info(f"{request.component_name} reset request received!")
         for client in self.clientsList:
             if client[0] == request.component_name:
                 client[1].call_async(Empty.Request())

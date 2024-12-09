@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Bool
 from rms_interfaces.srv import ComponentError
 from std_srvs.srv import Empty
-import copy
 
 class Error_handler(Node):
     def __init__(self):
@@ -35,7 +33,7 @@ class Error_handler(Node):
             
 
     def reset_callback(self, request, response):
-        self.get_logger().info(f"Request from {request.component_name} received!")
+        self.get_logger().info(f"{request.component_name} reset request received!")
         for client in self.clientsList:
             if client[0] == request.component_name:
                 client[1].call_async(Empty.Request())

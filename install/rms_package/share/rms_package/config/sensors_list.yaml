@@ -1,9 +1,10 @@
 component_error_handler:
   ros__parameters:
     sensors_list: ["camera", "lidar"]
-    sensor_response_timeouts: [2.0, 5.0]
+    sensor_response_timeouts: [5.0, 5.0]
     
 state_monitor:
   ros__parameters:
     sensors_list: ["camera", "lidar"]
-    sensor_response_timeouts: [2.0, 5.0]
+    sensor_response_timeouts: [5.0, 5.0]
+    checking_sensors_states_period: 1.0
