@@ -39,7 +39,7 @@ class LIDAR_handler(Node):
         msg = SensorState()
         msg.sensor_name = self.name
 
-        msg.data = self.msgCounter <= self.maxMsgNo
+        msg.state = self.msgCounter <= self.maxMsgNo
         self.msgCounter += 1
 
         self.lidarStatePublisher.publish(msg)

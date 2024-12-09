@@ -21,45 +21,27 @@ class StateMonitor(Node):
         self.sensorsList = self.get_parameter('sensors_list').get_parameter_value().string_array_value
         self.sensorResponseTimeouts = self.get_parameter('sensor_response_timeouts').get_parameter_value().double_array_value
 
-        self.sensorsSubscribers = []
-
         for sensor in self.sensorsList:
-            sub = self.create_subscription(SensorState, f'/{sensor}_state')
-            self.sensorsSubscribers.append([sensor, sub])
+            self.create_subscription(SensorState, f"/{sensor}_state", self.sensor_callback, 10)
             self.get_logger().info(f"{sensor} initialized successfully!")
-
-        self.cameraSubscriber = self.create_subscription(SensorState, "/camera_state", self.camera_callback, 10)
-        self.lidarSubscriber = self.create_subscription(SensorState, "/lidar_state", self.lidar_callback, 10)
 
         self.cliErrorHandler = self.create_client(ComponentError, 'sensor_error_handler')
         while not self.cliErrorHandler.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('ErrorHandler service not available, waiting again...')
         self.reqErrorHandler = ComponentError.Request()
 
-        # self.cliCamera = self.create_client(ComponentError, 'camera_error_handler')
-        # while not self.cliCamera.wait_for_service(timeout_sec=1.0):
-        #     self.get_logger().info('camera service not available, waiting again...')
-        # self.reqCamera = ComponentError.Request()
-
         self.get_logger().info("State monitor has been started!")
 
     def send_reset_request(self, sensorName):
-        # self.reqErrorHandler.data = True
         self.reqErrorHandler.component_name = sensorName
         self.cliErrorHandler.call_async(self.reqErrorHandler)
         self.get_logger().info(f"{sensorName} failed! Reset request sent.")
 
-    def camera_callback(self, msg: Bool):
-        if msg.data:
-            self.get_logger().info("Camera OK")
+    def sensor_callback(self, msg: SensorState):
+        if msg.state:
+            self.get_logger().info(f"{msg.sensor_name} OK")
         else:
-            self.send_reset_request(self.sensorsList[0])
-
-    def lidar_callback(self, msg: Bool):
-        if msg.data:
-            self.get_logger().info("LIDAR OK")
-        else:
-            self.send_reset_request(self.sensorsList[1])
+            self.send_reset_request(msg.sensor_name)
             
 
 def main(args=None):
