@@ -57,13 +57,13 @@ class StateMonitor(Node):
 
     def sensor_callback(self, msg: SensorState):
         currentTime = time.time()
+        self.sensorsStates[msg.sensor_name] = msg.state
+        
         if msg.state:
             self.get_logger().info(f"{msg.sensor_name} OK")
             self.lastUpdates[msg.sensor_name] = currentTime
-            self.sensorsStates[msg.sensor_name] = True
         else:
             self.send_reset_request(msg.sensor_name)
-            self.sensorsStates[msg.sensor_name] = False
 
     def check_sensors_states(self):
         currentTime = time.time()

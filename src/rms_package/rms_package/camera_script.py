@@ -3,7 +3,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Bool
 from rms_interfaces.msg import SensorState
-from std_srvs.srv import Empty
+from std_srvs.srv import Trigger
 
 class Camera_handler(Node):
     def __init__(self):
@@ -27,13 +27,15 @@ class Camera_handler(Node):
 
         self.msgCounter = 0
 
-        self.srv = self.create_service(Empty, f'{self.name}_error_handler', self.reset_callback)
+        self.srv = self.create_service(Trigger, f'{self.name}_error_handler', self.reset_callback)
 
         self.get_logger().info(f"{self.name} has been started!")
 
     def reset_callback(self, request, response):
         self.msgCounter = 0
-        self.get_logger().info(f"{self.name} reset succesfully!")
+        response.message = self.name
+        response.success = True
+        
         return response
 
     def send_status(self):

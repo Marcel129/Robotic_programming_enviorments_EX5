@@ -2,7 +2,7 @@
 import rclpy
 from rclpy.node import Node
 from rms_interfaces.srv import ComponentError
-from std_srvs.srv import Empty
+from std_srvs.srv import Trigger
 
 class Error_handler(Node):
     def __init__(self):
@@ -22,23 +22,31 @@ class Error_handler(Node):
         self.get_logger().info("Component error handler has been started!")
         self.srv = self.create_service(ComponentError, 'sensor_error_handler', self.reset_callback)
 
-        self.clientsList = []
+        self.clientsList = {}
 
         for sensor in self.sensorsList:
-            cli = self.create_client(Empty, f'{sensor}_error_handler')
+            cli = self.create_client(Trigger, f'{sensor}_error_handler')
             while not cli.wait_for_service(timeout_sec=1.0):
                 self.get_logger().info(f'{sensor} service not available, waiting again...')
-            self.clientsList.append([sensor, cli])
+            self.clientsList[sensor] = cli
             self.get_logger().info(f"{sensor} initialized successfully!")
             
 
     def reset_callback(self, request, response):
         self.get_logger().info(f"{request.component_name} reset request received!")
-        for client in self.clientsList:
-            if client[0] == request.component_name:
-                client[1].call_async(Empty.Request())
+        future = self.clientsList[request.component_name].call_async(Trigger.Request())
+        future.add_done_callback(self.sensor_respone_handler)
+
         response.success = True
         return response
+    
+    def sensor_respone_handler(self, future):
+        response = future.result()
+        
+        if response.success:
+            self.get_logger().info(f"{response.message} reset succesfully!")
+        else:
+            self.get_logger().info(f"Failed to reset {response.message}!")
 
 
 def main(args=None):
